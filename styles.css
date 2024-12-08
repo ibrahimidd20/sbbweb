@@ -1,0 +1,448 @@
+/* General reset */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    
+
+}
+
+/* Header navigation */
+header {
+    background-color: #f8d4e4; /* Pink header */
+    padding: 10px 0;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000; /* Default text color */
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better spacing */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: #fff; /* White background on hover */
+    color: Black; /* Optional: #f8d4e4 Change text color to match the pink theme */
+    border-radius: 5px; /* Optional: Add rounded corners for a softer look */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+
+.logo {
+    max-width: 700px; /* Increase this value to make the image larger */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* About Page Styling */
+.about-page {
+    background-image: url('logo.webp'); /* Use the logo as the background */
+    background-size: contain; /* Ensure the logo fits nicely */
+    background-repeat: no-repeat; /* Prevent repeating the logo */
+    background-position: center; /* Center the logo */
+    background-color: #fff; /* Set a white background for contrast */
+    position: relative; /* Ensure the content stays on top */
+}
+
+/* Transparent Overlay for Faint Background Effect */
+.about-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('logo.webp'); /* Add the logo as a faint background */
+    background-size: contain; /* Ensure the logo fits nicely */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1; /* Make the logo very light */
+    z-index: -1; /* Send it behind the content */
+}
+
+/* About Content Styling */
+.about-content {
+    background-color: rgba(255, 255, 255, 0.9); /* White semi-transparent background */
+    padding: 40px;
+    max-width: 800px;
+    margin: 100px auto; /* Center the content on the page */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.about-content:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Title and Paragraph Styling */
+.about-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #555;
+}
+
+
+
+
+/* Products Page Background */
+.products-page {
+    background-color: #fff; /* Simple white background */
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px 0;
+}
+
+/* Products Intro */
+.products-intro {
+    text-align: center;
+    margin: 10px auto 30px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin: 0 10px 20px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Hover Effect on Product Card */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Order Button Styling */
+.order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6b6b; /* Sweet pink-red color */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px auto 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-button:hover {
+    background-color: #ff3b3b; /* Slightly darker red for hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.order-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+
+
+
+
+/* Modal Image Styling */
+#imageModal .modal-body {
+    text-align: center;
+}
+
+#imageModal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Make sure images are responsive */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+
+
+
+
+/* Contact Page Style*/
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Styles */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000; /* Default text color */
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better spacing */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: #fff; /* White background on hover */
+    color: Black; /* Optional: #f8d4e4 Change text color to match the pink theme */
+    border-radius: 5px; /* Optional: Add rounded corners for a softer look */
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    color: #333;
+}
+
+/* Background Logo Styling */
+.background-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Contact Content */
+.contact-content {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Form Styling */
+.contact-form-container {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #000;  /* #000; black button bg #FFB6C1; light pink - #4CAF50; green Default text color */
+    color: #fff; /* #FFB6C1; light pink - #fff green Default text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #996633; /* #7E5109; light brown hover #000; black hover #FFB6C1; pink hover #45a049 Default text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        padding: 20px;
+    }
+
+    .contact-content h1 {
+        font-size: 28px;
+    }
+
+    .contact-content p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
